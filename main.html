@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Game - Prototype</title>
+    <link href="https://fonts.googleapis.com/css?family=Mirza|Reem+Kufi" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="engine/player.js"></script>
+    <script type="text/javascript" src="engine/story.js"></script>
+    <script type="text/javascript" src="ui/ui.js"></script>
+    <script type="text/javascript" src="engine/init.js"></script>
+    <meta name="description" content="Fantasy Game: A simple rpg click adventure.">
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-container">
+        <div class="game-log">
+          <div class="story-block">
+            <div id="game-rolls">test</div>
+            <div id="story-log">Story Log</div>
+            <div id="story-actions">
+              <div class="story-action-opt" id="story-continue" onclick="nextStory(player, book1)">Continue</div>
+              <div class="story-action-opt" id="story-choice-1" onclick="checkResponse(0)">One</div>
+              <div class="story-action-opt" id="story-choice-2" onclick="checkResponse(1)">Two</div>
+              <div class="story-action-opt" id="story-choice-3" onclick="checkResponse(2)">Three</div>
+            </div>
+          </div>
+          <div class="left-block" id="log-left">left</div>
+           <div class="mid-block"> 
+            <div class="mid-block-top">top</div>
+            <div class="mid-block-mid">Game Log</div>
+            <div class="mid-block-bottom">bottom</div>
+          </div>
+          <div class="right-block" id="log-right">right</div>
+        </div>
+        <div class="game-menus">
+          <div id="menu-stats">Stats</div>
+          <div id="menu-skills">Skills</div>
+          <div id="menu-equip">Equipment</div>
+          <div id="menu-items">Items</div>
+          <div id="menu-map">Map</div>
+          <div id="menu-codex">Codex</div>
+        </div>
+        <div class="game-nav">
+          <ul>
+            <li>Stats</li>
+            <li>Skills</li>
+            <li>Equipment</li>
+            <li>Items</li>
+            <li>Map</li>
+            <li>Codex</li>
+            <li>Save</li>
+            <li>Load</li>
+            <li>Restart</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
